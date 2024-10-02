@@ -10,7 +10,7 @@ public class Ch03_문자열 {
         String c = "123";
         
         // 문자열은 리터럴 표기방식을 사용하는 것이 좋다
-        // 리터럴 표기 - 객체를 새성하지 않고 고정된 값을 그대로 대입
+        // 리터럴 표기 - 객체를 생성하지 않고 고정된 값을 그대로 대입
 
         // 내장 메서드
         a = "hello";
@@ -52,5 +52,23 @@ public class Ch03_문자열 {
         System.out.println(String.format("나는 사과를 %d개 먹었다!",10));
         // 두개 이상 입력
         System.out.println(String.format("나는 사과를 %d개 먹고 아파서 %s일 약을 먹었다.",5,"삼"));
+
+        // 문자열 포맷 코드 (%s , %c , %d , %f)
+
+        // 문자열 포맷 정렬과 공백 %자릿수s %10d
+        System.out.println(String.format("%10s","하이"));
+        // - 공백
+        System.out.println(String.format("%-10s펭수","하이"));
+        // 소수점 표현(.소수점 이하의 자리수를 의미한다, 그 아래의 숫자는 반올림을 해준다)
+        System.out.println(String.format("%.4f",3.42129145));
+        System.out.println(String.format("%10.4f",3.42129145));
+        // print 는 출력 메소드, pringln은 한줄을 출력한다
+        // printf : 문자열 포맷을 포함하는 출력 메소드
+        System.out.print("출력!");
+        System.out.print("출력!");
+        System.out.println("한줄출력!");
+        System.out.println("한줄출력!");
+        //String.format 메소드를 포함
+        System.out.printf("나는 오늘 아침에 사과 %d개를 먹었다.",3);
     }
 }
