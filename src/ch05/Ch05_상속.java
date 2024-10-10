@@ -1,4 +1,4 @@
-package Ch05;
+package ch05;
 
 //부모 클래스
 class Anima{

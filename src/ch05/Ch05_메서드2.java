@@ -1,4 +1,4 @@
-package Ch05;
+package ch05;
 
 class Sample2{
     int a;//객체 변수

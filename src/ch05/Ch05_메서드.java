@@ -1,4 +1,4 @@
-package Ch05;
+package ch05;
 
 class Sample {
     //int a와 int b는 매개변수다
