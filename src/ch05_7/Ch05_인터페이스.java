@@ -18,7 +18,9 @@ class Animal{
     void setName(String name){
         this.name = name;
     }
-    
+    void barkAnimal(Barkable animal){
+        animal.bark();
+    }
     //다형성, 하나의 객체가 여러 자료형 타입 Tiger와 Lion은 Animal 타입으로 선언 가능하다
     //호랑이와 사자타입의 메소드를 따로 만들 필요가 없다
     /*void barkAnimal(Animal animal){
@@ -29,9 +31,6 @@ class Animal{
             System.out.println("으르렁");
         }
     }*/
-    void barkAnimal(Barkable animal){
-        animal.bark();
-    }
 }
 //상속은 1개만 가능하지만 인터페이스는 콤마로 구분하여 여러개가 가능하다
 class Tiger extends Animal implements Predater, Barkable{
